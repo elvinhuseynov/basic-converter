@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div class="first-page" id="first-page">
+      <!-- <input type="button" value="Currency" /> -->
+      <input type="button" value="Weight" onclick="weigthPage()"/>
+      <input type="button" value="Length" onclick="lengthPage()"/>
+    </div>
+    <div class="length-page" id="length-page">
+      <div class="option">
+        <select name="length" id="select">
+          <option value="metertofeet">Meter to Feet</option>
+          <option value="metermtokm">Meter to Km</option>
+          <option value="decimetertokm">Decimeter to Km</option>
+          <option value="kmtomile">Km to Mile</option>
+        </select>
+      </div>
+
+      <div class="inputs">
+        <input type="text" class="input-box" id="first-input" />
+        <input type="text" class="input-box" id="second-input" />
+      </div>
+
+      <div class="convert-div">
+        <input
+          type="button"
+          value="Convert"
+          id="convert"
+          onclick="buttonClicked()"
+        />
+      </div>
+    </div>
+
+    <div class="weight-page" id="weigth-page">
+      <div class="tons system">
+        <span>Tons</span>
+        <input type="text" id="tons" class="text-box" />
+        <span>t</span>
+        <input
+          type="button"
+          class="convert-button"
+          id="w-convert-button"
+          value="Convert"
+          onclick="calculateWeight()"
+        />
+      </div>
+      <div class="kg system">
+        <span>Kilograms</span>
+        <input type="text" id="kg" class="text-box" />
+        <span>kg</span>
+        <input
+          type="button"
+          class="convert-button"
+          id="w-convert-button"
+          value="Convert"
+          onclick="calculateWeight()"
+        />
+      </div>
+
+      <div class="grams system">
+        <span>Grams</span>
+        <input type="text" id="grams" class="text-box" />
+        <span>gr</span>
+        <input
+          type="button"
+          class="convert-button"
+          id="w-convert-button"
+          value="Convert"
+          onclick="calculateWeight()"
+        />
+      </div>
+
+      <div class="pounds system">
+        <span>Pounds</span>
+        <input type="text" id="pounds" class="text-box" />
+        <span>lb</span>
+        <input
+          type="button"
+          class="convert-button"
+          id="w-convert-button"
+          value="Convert"
+          onclick="calculateWeight()"
+        />
+      </div>
+
+      <div class="reset-button">
+        <input
+          type="button"
+          value="Reset"
+          id="reset-button"
+          class="convert-button"
+          onclick="reset()"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="/script/script.js"></script>
+</html>

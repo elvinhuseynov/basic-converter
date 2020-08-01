@@ -1,0 +1,236 @@
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media scrren and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  background: #240000;
+  background: -webkit-gradient(linear, left top, right top, from(#240000), to(#8f5ec6));
+  background: linear-gradient(90deg, #240000 0%, #8f5ec6 100%);
+}
+
+body #first-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+}
+
+body #first-page input {
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+  background-color: cadetblue;
+}
+
+body #first-page input:hover {
+  background-color: chocolate;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body #length-page {
+  display: none;
+  width: 60%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+body #length-page .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+body #length-page .option select {
+  outline: 0;
+  margin-top: 2rem;
+  width: 40%;
+  height: 2rem;
+}
+
+body #length-page .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 50%;
+  margin: auto;
+}
+
+body #length-page .inputs .input-box {
+  width: 40%;
+  height: 20%;
+  outline: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+body #length-page .convert-div {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+body #length-page .convert-div #convert {
+  font-size: 1.5rem;
+  width: 40%;
+  height: 2.5rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+  background-color: cadetblue;
+}
+
+body #length-page .convert-div #convert:hover {
+  background-color: chocolate;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .weight-page {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  color: white;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+body .weight-page .system {
+  font-size: 2rem;
+  width: 100%;
+  height: 20%;
+}
+
+body .weight-page .system .text-box {
+  width: 50%;
+  height: 40%;
+  outline: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+body .weight-page .system .convert-button {
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+  background-color: cadetblue;
+  font-size: smaller;
+  float: right;
+  width: 20%;
+  height: 40%;
+  margin-top: 0.6rem;
+}
+
+body .weight-page .system .convert-button:hover {
+  background-color: chocolate;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .weight-page .reset-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .weight-page .reset-button .convert-button {
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+  background-color: cadetblue;
+  width: 30%;
+  margin: auto;
+  height: 4rem;
+}
+
+body .weight-page .reset-button .convert-button:hover {
+  background-color: chocolate;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,138 @@
+@import "mixins";
+@import "responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 0, 1) 0%,
+    rgba(143, 94, 198, 1) 100%
+  );
+
+  #first-page {
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+
+    input {
+      @include button;
+    }
+
+    input:hover {
+      @include button-hover;
+    }
+  }
+
+  #length-page {
+    display: none;
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 8rem;
+
+    .option {
+      @include option-div;
+
+      select {
+        @include select-box;
+      }
+    }
+
+    .inputs {
+      @include input-div;
+
+      .input-box {
+        @include input-box;
+      }
+    }
+
+    .convert-div {
+      margin: auto;
+      text-align: center;
+      width: 50%;
+
+      #convert {
+        font-size: 1.5rem;
+        width: 40%;
+        height: 2.5rem;
+        border-radius: 5rem;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        outline: 0;
+        -webkit-transition: ease 0.8s;
+        transition: ease 0.8s;
+        background-color: cadetblue;
+      }
+
+      #convert:hover {
+        background-color: chocolate;
+        -webkit-transition: ease 0.8s;
+        transition: ease 0.8s;
+      }
+    }
+  }
+
+  .weight-page {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    color: white;
+    margin: auto;
+    margin-top: 10rem;
+
+    .system {
+      // margin: auto;
+      font-size: 2rem;
+      width: 100%;
+      height: 20%;
+
+      .text-box {
+        width: 50%;
+        height: 40%;
+        outline: 0;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .convert-button {
+        @include button;
+        font-size: smaller;
+        float: right;
+        width: 20%;
+        height: 40%;
+        margin-top: 0.6rem;
+      }
+
+      .convert-button:hover {
+        @include button-hover;
+      }
+    }
+
+    .reset-button {
+      display: flex;
+      width: 100%;
+
+      .convert-button {
+        @include button;
+        width: 30%;
+        margin: auto;
+        height: 4rem;
+      }
+
+      .convert-button:hover {
+        @include button-hover;
+      }
+    }
+  }
+}
